@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            float:right;
+        }
+        div{
+    border:3px solid #4CAF50;
+    padding:5px;
+        }
+    .img1{
+        float:right;
+}
+
+.img2{
+    float:right;
+}
+
+.clearfix:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+</style>
+</head>
+<body>
+
+<h2>without clearfix</h2>
+
+<p>This is floated to the right.It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+    <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0dJvfUucucMzHcnF5LKhAKmkse4jXit_djA&usqp=CAU" alt="flower" width="180" height="180">
+    Lorem ipsum dolor sit amet,consectetur adipiscing elit.phasellus imperdiet .....
+    </div>
+    
+<h2 style="clear:right">with New Modern Clearfix</h2>
+<p>Add the Clearfix hack to the containing element,to fix this problem:</p>
+
+<div class="clearfix">
+    <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5tUwEHy0hYDtHATioOFdGuVZs-JDRNhnvw&usqp=CAU" alt="" width="180" height="180">
+    lorem ipsum dolor sit amet,consectetur adipiscing elit.phasellus imperdit .....
+</div>
+   <h2>Float Right</h2>
+
+      <p>In this example,the image will float the the right in the paragraph,and the text in the paragraph will wrap around the image.</p>
+
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5tUwEHy0hYDtHATioOFdGuVZs-JDRNhnvw&usqp=CAU"> alt="flower" style="width:180px;height:180px
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatum suscipit rem, molestiae aut dolorum deleniti labore possimus? Quam quod voluptate commodi 
+      tempore perspiciatis beatae. Voluptatibus vel quos adipisci a.</p>
+
+    
+</body>
+</html>
